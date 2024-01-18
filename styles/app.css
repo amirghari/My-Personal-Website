@@ -637,7 +637,7 @@ body {
 */
 
 .portfolio {
-  margin-top: 8rem;
+  padding: 8rem 0;
 }
 
 .portfolio-list {
@@ -675,6 +675,11 @@ body {
 
 .portfolio-content__img {
   width: 100%;
+  transition: all 500ms ease-in;
+  cursor: pointer;
+}
+.portfolio-content__img:hover {
+  transform: scale(1.05);
 }
 
 .swiper-pagination {
@@ -700,10 +705,15 @@ body {
   text-align: center;
 }
 .portfolio-content__img2 {
-  max-width: 50%; /* Ensure the image doesn't exceed the container's width */
-  max-height: 70%; /* Ensure the image doesn't exceed the container's height */
+  max-width: 65%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 65%; /* Ensure the image doesn't exceed the container's height */
   display: block; /* Remove any default inline styles */
-  margin: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+.portfolio-content__img2:hover {
+  transform: scale(1.05);
 }
 
 /*
@@ -736,6 +746,13 @@ body {
   border-radius: 100%;
   background-color: #1f2935;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer__icons {
+  display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
