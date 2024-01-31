@@ -14,6 +14,11 @@ if (window.localStorage.getItem("theme") === "dark-theme") {
   document.documentElement.classList.add("dark-theme");
   changeThemeBtn.innerHTML = lightThemeIcon;
 }
+function closeMenu() {
+  menu.classList.toggle("menu--open");
+  navToggleIcon.classList.toggle("nav__toggle-icon--open");
+  cover.classList.toggle("cover--show");
+}
 
 // Intersection Observer
 const observer = new IntersectionObserver(observerHandler, { threshold: 0.5 });

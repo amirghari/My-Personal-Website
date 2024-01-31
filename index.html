@@ -17,19 +17,19 @@
           <h1 class="nav__logo">A.G</h1>
           <ul class="menu">
             <li data-section="home" class="menu__item menu__item--active">
-              <a href="#" class="menu__link">Home</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
             </li>
             <li data-section="aboutus" class="menu__item">
-              <a href="#" class="menu__link">About me</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">About me</a>
             </li>
             <li data-section="portfolio" class="menu__item">
-              <a href="#" class="menu__link">Portfolio</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">Portfolio</a>
             </li>
             <li data-section="resume" class="menu__item">
-              <a href="#" class="menu__link">Resume</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">Resume</a>
             </li>
             <li data-section="services" class="menu__item">
-              <a href="#" class="menu__link">Services</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">Services</a>
             </li>
           </ul>
           <div class="nav__toggle-icon">
@@ -133,7 +133,7 @@
               All Works
             </li>
             <li class="portfolio-list__item" data-content-id="#illustration">
-              Web Pages 
+              Webapps & Websites
             </li>
             <li class="portfolio-list__item" data-content-id="#animation">
               Simulation 
@@ -164,6 +164,14 @@
                     class="portfolio-content__img"
                     alt="Portfolio Image"
                     onclick="loaderClickHandler('https://github.com/amirghari/Dodge-Sample-Webpage')"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-5.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                    onclick="loaderClickHandler('https://github.com/amerilain/Flight-Game')"
                   />
                 </div>
                 <div class="swiper-slide">
@@ -204,6 +212,14 @@
                     alt="Portfolio Image"
                     onclick="loaderClickHandler('https://github.com/amirghari/Dodge-Sample-Webpage')"
                   />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                      src="images/portfolio-5.jpg"
+                      class="portfolio-content__img"
+                      alt="Portfolio Image"
+                      onclick="loaderClickHandler('https://github.com/amerilain/Flight-Game')"
+                    />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -621,7 +637,7 @@
                     fill="#fff"
                   />
                 </svg>
-                <h4 class="service__title">Database Management</h4>
+                <h4 class="service__title">Data Organization and Maintenance"</h4>
                 <p class="service__caption">
                     Designing, implementing, and managing databases, ensuring efficient data storage, retrieval, and integrity within the system architecture.
                 </p>
